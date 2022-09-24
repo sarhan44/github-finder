@@ -1,10 +1,16 @@
 import React, { useState } from "react";
+import day from "dayjs"
+
+const joinedDate = function (ISO){
+  const date = day(ISO);
+  const formatdate = `joined ${date.format("DD-MM-YYYY")}`
+  return formatdate;
+}
+
 
 const App = () => {
   const [input, setInput] = useState("");
-
   const [user, setUser] = useState({});
-
   const handleSerach = async (e) => {
     e.preventDefault();
     fetch(`https://api.github.com/users/${input}`)
@@ -17,7 +23,7 @@ const App = () => {
   };
 
   return (
-    <div className="container flex flex-col items-center ">
+    <div className="container flex m-auto flex-col items-center ">
     <h1 className=" mt-10 mb-3 text-4xl font-extrabold text-indigo-900"> Github Profile Finder </h1>
       <form>
         <label
@@ -78,7 +84,7 @@ const App = () => {
               {user.name}
             </p>
             <p class="mt-2  font-light text-black">
-              {user.created_at}
+              {joinedDate(user.created_at)}
             </p>
           </div>
           <div class="flex justify-center pb-3 text-black">
