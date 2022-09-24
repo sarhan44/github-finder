@@ -61,7 +61,7 @@ const App = () => {
           <button
             onClick={handleSerach}
             type="submit"
-            class="text-white absolute right-2.5 bottom-2.5 bg-blue-800 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="text-white absolute right-2.5 bottom-2.5 bg-emerald-300 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Search
           </button>
@@ -70,8 +70,8 @@ const App = () => {
 
       {/* card component */}
       { Object.keys(user).length > 0 ? (
-        <div class="rounded-3xl overflow-hidden shadow-xl max-w-sm my-3 bg-white">
-          <img src="https://image.freepik.com/free-vector/abstract-binary-code-techno-background_1048-12836.jpg" class="h-48 w-96" />
+        <div class="rounded-3xl overflow-hidden shadow-xl max-w-sm my-3 bg-emerald-300">
+          <img src="https://www.solidbackgrounds.com/images/2560x1440/2560x1440-davys-grey-solid-color-background.jpg" class="h-28 w-96" />
           <div class="flex justify-center -mt-8">
             <img
               src={user.avatar_url}
