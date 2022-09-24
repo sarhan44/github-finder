@@ -18,10 +18,11 @@ const App = () => {
 
   return (
     <div className="container flex flex-col items-center ">
+    <h1 className=" mt-10 mb-3 text-4xl font-extrabold text-indigo-900"> Github Profile Finder </h1>
       <form>
         <label
           for="search"
-          class="mt-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300"
+          class=" text-sm font-medium text-gray-900 sr-only dark:text-gray-300"
         >
           Your Email
         </label>
@@ -47,7 +48,7 @@ const App = () => {
             onChange={(e) => setInput(e.target.value)}
             type="search"
             id="search"
-            class="block pr-40 p-4 pl-10 w-full mt-20 text-sm text-white bg-indigo-900 rounded-3xl border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="block pr-40 p-4 pl-10 w-full mt-50 text-sm text-white bg-indigo-900 rounded-3xl border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="your username"
             required=""
           />
