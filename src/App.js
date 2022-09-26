@@ -70,7 +70,7 @@ const App = () => {
 
       {/* card component */}
       { Object.keys(user).length > 0 ? (
-        <div class="rounded-3xl overflow-hidden shadow-xl max-w-sm my-3 bg-emerald-300">
+        <div class="rounded-3xl overflow-hidden shadow-xl max-w-sm my-3 bg-emerald-200">
           <img src="https://www.solidbackgrounds.com/images/2560x1440/2560x1440-davys-grey-solid-color-background.jpg" class="h-28 w-96" />
           <div class="flex justify-center -mt-8">
             <img
@@ -98,7 +98,25 @@ const App = () => {
             </div>
           </div>
         </div>
-      ):('')
+      ):(
+        <div class="rounded-3xl overflow-hidden shadow-xl max-w-sm my-3 bg-emerald-200">
+          <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg" class="h-28 w-96" />
+          <div class="flex justify-center -mt-8">
+            <img
+              src='https://avatars.githubusercontent.com/u/102715600?v=4'
+              class="rounded-full border-solid border-emerald-200 border-8 -mt-3 w-40"
+            />
+          </div>
+          <div class="text-center px-3 pb-6 pt-2">
+            <p class="mt-2 font-bold text-2xl text-black">
+              Sarhan Khan
+            </p>
+            <p class="mt-2  font-light text-black">
+              Hi, Thanks for visiting.
+            </p>
+          </div>
+        </div>
+        )
       }
     </div>
   );
